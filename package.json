@@ -12,6 +12,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@cloudflare/kv-asset-handler": "^0.3.0",
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@hookform/resolvers": "^3.9.0",
