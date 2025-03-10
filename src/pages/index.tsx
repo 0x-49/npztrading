@@ -18,9 +18,10 @@ export default function Home() {
     <>
       <Head>
         <title>Join NPZ Trading - Expert Trading Community & Signals</title>
-        <meta name="description" content="Join NPZ Trading for real-time signals, live sessions, and expert-led classes. Access thousands of hours of educational content and engage with a supportive trading community." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="description" content="Join NPZ Trading for real-time signals, live sessions, and expert-led classes. Access thousands of hours of educational content and engage with a supportive trading community." />
+        <meta name="application-name" content="NPZ Trading" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
       </Head>
       <div className="bg-background min-h-screen flex flex-col">
         <Header />
@@ -407,18 +408,42 @@ export default function Home() {
           </section>
 
           {/* Footer */}
-          <footer className="border-t border-border py-8">
+          <footer className="border-t border-border py-12">
             <div className="container mx-auto px-4">
-              <div className="flex justify-center space-x-6">
-                <a href="https://www.instagram.com/npztrading/?hl=en" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
-                  <Instagram className="h-6 w-6" />
-                </a>
-                <a href="https://www.youtube.com/channel/UCUieGgozVseYHVDpzjzff-A" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary">
-                  <Youtube className="h-6 w-6" />
-                </a>
-              </div>
-              <div className="text-center mt-4 text-sm text-muted-foreground">
-                &copy; {new Date().getFullYear()} NPZ Trading. All rights reserved.
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {/* Social Media */}
+                <div className="flex flex-col space-y-3">
+                  <h3 className="font-semibold text-lg mb-2">Connect With Us</h3>
+                  <a href="https://instagram.com/npztrading" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary flex items-center space-x-2" title="Follow NPZ Trading on Instagram">
+                    <Instagram className="h-5 w-5" />
+                    <span>@npztrading</span>
+                  </a>
+                  <a href="https://www.youtube.com/@npztrading" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary flex items-center space-x-2" title="Subscribe to NPZ Trading on YouTube">
+                    <Youtube className="h-5 w-5" />
+                    <span>@npztrading</span>
+                  </a>
+                </div>
+
+                {/* Contact Info */}
+                <div className="flex flex-col space-y-3">
+                  <h3 className="font-semibold text-lg mb-2">Contact Us</h3>
+                  <a href="tel:8005525842" className="text-muted-foreground hover:text-primary">
+                    (800) 552-5842
+                  </a>
+                  <a href="mailto:info@joinnpztrading.com" className="text-muted-foreground hover:text-primary">
+                    info@joinnpztrading.com
+                  </a>
+                </div>
+
+                {/* Address */}
+                <div className="flex flex-col space-y-3 lg:col-span-2">
+                  <h3 className="font-semibold text-lg mb-2">Location</h3>
+                  <address className="text-muted-foreground not-italic">
+                    4817 Munson St NW<br />
+                    Canton, OH 44718<br />
+                    <span className="text-sm">2,520 SF of Office Space Available</span>
+                  </address>
+                </div>
               </div>
             </div>
           </footer>

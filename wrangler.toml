@@ -1,0 +1,12 @@
+name = "npz-trading"
+compatibility_date = "2024-01-20"
+
+[build]
+command = "npm run build"
+publishDirectory = "out"
+
+[site]
+bucket = "./out"
+
+[build.upload]
+format = "service-worker"
