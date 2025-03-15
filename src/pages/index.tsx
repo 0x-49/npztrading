@@ -17,23 +17,51 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Join NPZ Trading - Expert Trading Community & Signals</title>
+        <title>NPZ Trading - Expert Forex Signals & Trading Community</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Join NPZ Trading for real-time signals, live sessions, and expert-led classes. Access thousands of hours of educational content and engage with a supportive trading community." />
+        <meta name="description" content="Unlock your trading potential with NPZ Trading! Get expert forex signals, live sessions, and education. Join a thriving community of 529+ traders today." />
+        <meta name="keywords" content="forex signals, forex trading, trading signals, trading community, live trading sessions, trading education" />
+        <meta name="author" content="NPZ Trading" />
         <meta name="application-name" content="NPZ Trading" />
         <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta property="og:title" content="NPZ Trading - Forex Signals & Community" />
+        <meta property="og:description" content="Get access to real-time forex signals, live trading sessions, and expert mentorship. Join our community of 529+ successful traders." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://joinnpztrading.com" />
+        <meta property="og:image" content="https://joinnpztrading.com/images/logo1.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="NPZ Trading - Forex Signals & Community" />
+        <meta name="twitter:description" content="Get access to real-time forex signals, live trading sessions, and expert mentorship. Join our community of 529+ successful traders." />
+        <meta name="twitter:image" content="https://joinnpztrading.com/images/logo1.png" />
+        <link rel="canonical" href="https://joinnpztrading.com" />
+ run        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "NPZ Trading",
+              "description": "Expert forex trading community providing real-time signals and education",
+              "url": "https://joinnpztrading.com",
+              "logo": "https://joinnpztrading.com/images/logo1.png",
+              "sameAs": [
+                "https://www.youtube.com/embed/HZkVWODM3ho",
+                "https://www.youtube.com/embed/tqdBik0MkIc"
+              ]
+            }
+          `}
+        </script>
       </Head>
-      <div className="bg-background min-h-screen flex flex-col">
+      <div className="flex flex-col min-h-screen bg-background">
         <Header />
         <main className="flex-1">
           {/* Hero Section */}
-          <section className="container mx-auto px-4 py-24 text-center relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-purple-500/10 pointer-events-none" />
+          <section className="container overflow-hidden relative px-4 py-24 mx-auto text-center">
+            <div className="absolute inset-0 bg-gradient-to-r pointer-events-none from-blue-500/10 to-purple-500/10" />
             <Badge className="mb-4">Trusted by 529+ Traders</Badge>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
+            <h1 className="mb-6 text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500 md:text-6xl">
               Elevate Your Trading Journey with NPZ Trading
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+            <p className="mx-auto mb-8 max-w-2xl text-xl text-muted-foreground">
               Join a community of over 529 traders achieving success through real-time signals, live sessions, and expert-led classes.
             </p>
             <div className="flex gap-4 justify-center">
@@ -52,9 +80,9 @@ export default function Home() {
 
           {/* About Section */}
           <section id="about" className="py-16 bg-secondary/50">
-            <div className="container mx-auto px-4">
-              <h2 className="text-3xl font-bold text-center mb-8">Built by Traders, for Traders</h2>
-              <p className="text-lg text-muted-foreground text-center max-w-3xl mx-auto mb-12">
+            <div className="container px-4 mx-auto">
+              <h2 className="mb-8 text-3xl font-bold text-center">Built by Traders, for Traders</h2>
+              <p className="mx-auto mb-12 max-w-3xl text-lg text-center text-muted-foreground">
                 At NPZ Trading, we empower traders to succeed through expert guidance, real-time signals, and engaging educational content. 
                 With multiple live sessions daily and a wealth of resources, we foster an environment where traders of all levels can grow, 
                 learn, and master the art of trading.
@@ -64,63 +92,63 @@ export default function Home() {
 
           {/* Features Section */}
           <section id="features" className="py-16">
-            <div className="container mx-auto px-4">
-              <h2 className="text-3xl font-bold text-center mb-12">Why Choose NPZ Trading?</h2>
-              <div className="grid md:grid-cols-3 gap-8">
-                <Card className="bg-background/50 backdrop-blur">
+            <div className="container px-4 mx-auto">
+              <h2 className="mb-12 text-3xl font-bold text-center">Why Choose NPZ Trading?</h2>
+              <div className="grid gap-8 md:grid-cols-3">
+                <Card className="backdrop-blur bg-background/50">
                   <CardHeader>
-                    <Zap className="h-10 w-10 text-blue-500 mb-2" />
+                    <Zap className="mb-2 w-10 h-10 text-blue-500" />
                     <CardTitle>Real-Time Signals</CardTitle>
                     <CardDescription>Expert guidance for informed trading decisions</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <ul className="space-y-2">
-                      <li className="flex items-center gap-2">
-                        <CheckCircle className="h-5 w-5 text-green-500" />
+                      <li className="flex gap-2 items-center">
+                        <CheckCircle className="w-5 h-5 text-green-500" />
                         Live buy and sell signals
                       </li>
-                      <li className="flex items-center gap-2">
-                        <CheckCircle className="h-5 w-5 text-green-500" />
+                      <li className="flex gap-2 items-center">
+                        <CheckCircle className="w-5 h-5 text-green-500" />
                         Real-time market analysis
                       </li>
                     </ul>
                   </CardContent>
                 </Card>
 
-                <Card className="bg-background/50 backdrop-blur">
+                <Card className="backdrop-blur bg-background/50">
                   <CardHeader>
-                    <BookOpen className="h-10 w-10 text-purple-500 mb-2" />
+                    <BookOpen className="mb-2 w-10 h-10 text-purple-500" />
                     <CardTitle>Educational Content</CardTitle>
                     <CardDescription>Comprehensive learning resources</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <ul className="space-y-2">
-                      <li className="flex items-center gap-2">
-                        <CheckCircle className="h-5 w-5 text-green-500" />
+                      <li className="flex gap-2 items-center">
+                        <CheckCircle className="w-5 h-5 text-green-500" />
                         Trading courses & seminars
                       </li>
-                      <li className="flex items-center gap-2">
-                        <CheckCircle className="h-5 w-5 text-green-500" />
+                      <li className="flex gap-2 items-center">
+                        <CheckCircle className="w-5 h-5 text-green-500" />
                         Strategy development
                       </li>
                     </ul>
                   </CardContent>
                 </Card>
 
-                <Card className="bg-background/50 backdrop-blur">
+                <Card className="backdrop-blur bg-background/50">
                   <CardHeader>
-                    <Users className="h-10 w-10 text-blue-500 mb-2" />
+                    <Users className="mb-2 w-10 h-10 text-blue-500" />
                     <CardTitle>Community Access</CardTitle>
                     <CardDescription>Supportive trading environment</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <ul className="space-y-2">
-                      <li className="flex items-center gap-2">
-                        <CheckCircle className="h-5 w-5 text-green-500" />
+                      <li className="flex gap-2 items-center">
+                        <CheckCircle className="w-5 h-5 text-green-500" />
                         Expert mentorship
                       </li>
-                      <li className="flex items-center gap-2">
-                        <CheckCircle className="h-5 w-5 text-green-500" />
+                      <li className="flex gap-2 items-center">
+                        <CheckCircle className="w-5 h-5 text-green-500" />
                         Community support
                       </li>
                     </ul>
@@ -132,9 +160,9 @@ export default function Home() {
 
           {/* Success Stories Section */}
           <section className="py-16">
-            <div className="container mx-auto px-4">
-              <h2 className="text-3xl font-bold text-center mb-12">Real Trading Success Stories</h2>
-              <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div className="container px-4 mx-auto">
+              <h2 className="mb-12 text-3xl font-bold text-center">Real Trading Success Stories</h2>
+              <div className="grid gap-8 mx-auto max-w-5xl md:grid-cols-2">
                 <div className="aspect-video">
                   <iframe
                     className="w-full h-full rounded-lg"
@@ -154,14 +182,14 @@ export default function Home() {
                   />
                 </div>
               </div>
-              <div className="text-center mt-8">
+              <div className="mt-8 text-center">
                 <a 
                   href="https://whop.com/npztrading/?a=digitalartlab" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="inline-flex items-center text-primary hover:text-primary/80"
                 >
-                  <ExternalLink className="h-5 w-5 mr-2" />
+                  <ExternalLink className="mr-2 w-5 h-5" />
                   Watch More Success Stories
                 </a>
               </div>
@@ -170,30 +198,30 @@ export default function Home() {
 
           {/* Challenges Section */}
           <section className="py-16 bg-secondary/50">
-            <div className="container mx-auto px-4">
-              <h2 className="text-3xl font-bold text-center mb-12">Transform Your Trading Experience</h2>
-              <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-                <Card className="bg-background/50 backdrop-blur">
+            <div className="container px-4 mx-auto">
+              <h2 className="mb-12 text-3xl font-bold text-center">Transform Your Trading Experience</h2>
+              <div className="grid gap-8 mx-auto max-w-5xl md:grid-cols-3">
+                <Card className="backdrop-blur bg-background/50">
                   <CardHeader>
-                    <Target className="h-10 w-10 text-blue-500 mb-2" />
+                    <Target className="mb-2 w-10 h-10 text-blue-500" />
                     <CardTitle>Strategy Development</CardTitle>
                     <CardDescription>
                       Learn to develop and stick to clear trading plans. Master proven strategies that work in any market condition.
                     </CardDescription>
                   </CardHeader>
                 </Card>
-                <Card className="bg-background/50 backdrop-blur">
+                <Card className="backdrop-blur bg-background/50">
                   <CardHeader>
-                    <Brain className="h-10 w-10 text-purple-500 mb-2" />
+                    <Brain className="mb-2 w-10 h-10 text-purple-500" />
                     <CardTitle>Emotional Control</CardTitle>
                     <CardDescription>
                       Master trading psychology and decision-making. Learn to control emotions and trade with confidence.
                     </CardDescription>
                   </CardHeader>
                 </Card>
-                <Card className="bg-background/50 backdrop-blur">
+                <Card className="backdrop-blur bg-background/50">
                   <CardHeader>
-                    <BarChart className="h-10 w-10 text-blue-500 mb-2" />
+                    <BarChart className="mb-2 w-10 h-10 text-blue-500" />
                     <CardTitle>Risk Management</CardTitle>
                     <CardDescription>
                       Learn proper position sizing and risk control. Protect your capital while maximizing potential returns.
@@ -205,35 +233,35 @@ export default function Home() {
           </section>
 
           {/* Pricing Section */}
-          <section id="pricing" className="py-16 container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">Choose Your Path to Success</h2>
-            <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <section id="pricing" className="container px-4 py-16 mx-auto">
+            <h2 className="mb-12 text-3xl font-bold text-center">Choose Your Path to Success</h2>
+            <div className="grid gap-8 mx-auto max-w-5xl md:grid-cols-2">
               <Card className="border-2 border-primary">
                 <CardHeader>
                   <CardTitle className="text-2xl">Monthly Membership</CardTitle>
                   <CardDescription>Full access to all trading resources</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="text-4xl font-bold mb-6">$180<span className="text-xl text-muted-foreground">/month</span></div>
+                  <div className="mb-6 text-4xl font-bold">$180<span className="text-xl text-muted-foreground">/month</span></div>
                   <ul className="space-y-4">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-5 w-5 text-green-500" />
+                    <li className="flex gap-2 items-center">
+                      <CheckCircle className="w-5 h-5 text-green-500" />
                       Live sessions with expert signal callers
                     </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-5 w-5 text-green-500" />
+                    <li className="flex gap-2 items-center">
+                      <CheckCircle className="w-5 h-5 text-green-500" />
                       Trading courses and seminar recordings
                     </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-5 w-5 text-green-500" />
+                    <li className="flex gap-2 items-center">
+                      <CheckCircle className="w-5 h-5 text-green-500" />
                       Live buy and sell signals
                     </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-5 w-5 text-green-500" />
+                    <li className="flex gap-2 items-center">
+                      <CheckCircle className="w-5 h-5 text-green-500" />
                       Trading psychology insights
                     </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-5 w-5 text-green-500" />
+                    <li className="flex gap-2 items-center">
+                      <CheckCircle className="w-5 h-5 text-green-500" />
                       Community giveaways and prizes
                     </li>
                   </ul>
@@ -253,22 +281,22 @@ export default function Home() {
                   <CardDescription>One-time payment for lifetime access</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <div className="text-4xl font-bold mb-6">$1,500<span className="text-xl text-muted-foreground"> one-time</span></div>
+                  <div className="mb-6 text-4xl font-bold">$1,500<span className="text-xl text-muted-foreground"> one-time</span></div>
                   <ul className="space-y-4">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-5 w-5 text-green-500" />
+                    <li className="flex gap-2 items-center">
+                      <CheckCircle className="w-5 h-5 text-green-500" />
                       Lifetime access to all educational content
                     </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-5 w-5 text-green-500" />
+                    <li className="flex gap-2 items-center">
+                      <CheckCircle className="w-5 h-5 text-green-500" />
                       Future content updates included
                     </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-5 w-5 text-green-500" />
+                    <li className="flex gap-2 items-center">
+                      <CheckCircle className="w-5 h-5 text-green-500" />
                       Advanced trading strategies
                     </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-5 w-5 text-green-500" />
+                    <li className="flex gap-2 items-center">
+                      <CheckCircle className="w-5 h-5 text-green-500" />
                       Priority support and mentorship
                     </li>
                   </ul>
@@ -285,15 +313,15 @@ export default function Home() {
           </section>
 
           {/* Testimonials Section */}
-          <section id="testimonials" className="bg-secondary/50 py-16">
-            <div className="container mx-auto px-4">
-              <h2 className="text-3xl font-bold text-center mb-12">What Our Members Say</h2>
-              <div className="grid md:grid-cols-3 gap-8">
-                <Card className="bg-background/50 backdrop-blur">
+          <section id="testimonials" className="py-16 bg-secondary/50">
+            <div className="container px-4 mx-auto">
+              <h2 className="mb-12 text-3xl font-bold text-center">What Our Members Say</h2>
+              <div className="grid gap-8 md:grid-cols-3">
+                <Card className="backdrop-blur bg-background/50">
                   <CardHeader>
-                    <div className="flex items-center gap-2 mb-2">
+                    <div className="flex gap-2 items-center mb-2">
                       {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="h-5 w-5 fill-yellow-500 text-yellow-500" />
+                        <Star key={i} className="w-5 h-5 text-yellow-500 fill-yellow-500" />
                       ))}
                     </div>
                     <CardTitle>Billol Safdari</CardTitle>
@@ -304,11 +332,11 @@ export default function Home() {
                   </CardContent>
                 </Card>
 
-                <Card className="bg-background/50 backdrop-blur">
+                <Card className="backdrop-blur bg-background/50">
                   <CardHeader>
-                    <div className="flex items-center gap-2 mb-2">
+                    <div className="flex gap-2 items-center mb-2">
                       {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="h-5 w-5 fill-yellow-500 text-yellow-500" />
+                        <Star key={i} className="w-5 h-5 text-yellow-500 fill-yellow-500" />
                       ))}
                     </div>
                     <CardTitle>Kenui M Jenks</CardTitle>
@@ -319,11 +347,11 @@ export default function Home() {
                   </CardContent>
                 </Card>
 
-                <Card className="bg-background/50 backdrop-blur">
+                <Card className="backdrop-blur bg-background/50">
                   <CardHeader>
-                    <div className="flex items-center gap-2 mb-2">
+                    <div className="flex gap-2 items-center mb-2">
                       {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="h-5 w-5 fill-yellow-500 text-yellow-500" />
+                        <Star key={i} className="w-5 h-5 text-yellow-500 fill-yellow-500" />
                       ))}
                     </div>
                     <CardTitle>David Collins</CardTitle>
@@ -338,9 +366,9 @@ export default function Home() {
           </section>
 
           {/* FAQ Section */}
-          <section className="py-16 container mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
-            <div className="max-w-3xl mx-auto">
+          <section className="container px-4 py-16 mx-auto">
+            <h2 className="mb-12 text-3xl font-bold text-center">Frequently Asked Questions</h2>
+            <div className="mx-auto max-w-3xl">
               <Accordion type="single" collapsible className="w-full">
                 <AccordionItem value="item-1">
                   <AccordionTrigger>How much money do I need to start?</AccordionTrigger>
@@ -395,38 +423,38 @@ export default function Home() {
           </section>
 
           {/* CTA Section */}
-          <section className="py-16 container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-6">Ready to Transform Your Trading Journey?</h2>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <section className="container px-4 py-16 mx-auto text-center">
+            <h2 className="mb-6 text-3xl font-bold">Ready to Transform Your Trading Journey?</h2>
+            <p className="mx-auto mb-8 max-w-2xl text-xl text-muted-foreground">
               Join NPZ Trading today and get access to expert guidance, real-time signals, and a supportive community.
             </p>
             <a href="https://whop.com/npztrading/?a=digitalartlab" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600">
-                Join NPZ Trading Now <ArrowRight className="ml-2 h-5 w-5" />
+                Join NPZ Trading Now <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </a>
           </section>
 
           {/* Footer */}
-          <footer className="border-t border-border py-12">
-            <div className="container mx-auto px-4">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <footer className="py-12 border-t border-border">
+            <div className="container px-4 mx-auto">
+              <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
                 {/* Social Media */}
                 <div className="flex flex-col space-y-3">
-                  <h3 className="font-semibold text-lg mb-2">Connect With Us</h3>
-                  <a href="https://instagram.com/npztrading" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary flex items-center space-x-2" title="Follow NPZ Trading on Instagram">
-                    <Instagram className="h-5 w-5" />
+                  <h3 className="mb-2 text-lg font-semibold">Connect With Us</h3>
+                  <a href="https://instagram.com/npztrading" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-muted-foreground hover:text-primary" title="Follow NPZ Trading on Instagram">
+                    <Instagram className="w-5 h-5" />
                     <span>@npztrading</span>
                   </a>
-                  <a href="https://www.youtube.com/@npztrading" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary flex items-center space-x-2" title="Subscribe to NPZ Trading on YouTube">
-                    <Youtube className="h-5 w-5" />
+                  <a href="https://www.youtube.com/@npztrading" target="_blank" rel="noopener noreferrer" className="flex items-center space-x-2 text-muted-foreground hover:text-primary" title="Subscribe to NPZ Trading on YouTube">
+                    <Youtube className="w-5 h-5" />
                     <span>@npztrading</span>
                   </a>
                 </div>
 
                 {/* Contact Info */}
                 <div className="flex flex-col space-y-3">
-                  <h3 className="font-semibold text-lg mb-2">Contact Us</h3>
+                  <h3 className="mb-2 text-lg font-semibold">Contact Us</h3>
                   <a href="tel:8005525842" className="text-muted-foreground hover:text-primary">
                     (800) 552-5842
                   </a>
@@ -437,8 +465,8 @@ export default function Home() {
 
                 {/* Address */}
                 <div className="flex flex-col space-y-3 lg:col-span-2">
-                  <h3 className="font-semibold text-lg mb-2">Location</h3>
-                  <address className="text-muted-foreground not-italic">
+                  <h3 className="mb-2 text-lg font-semibold">Location</h3>
+                  <address className="not-italic text-muted-foreground">
                     4817 Munson St NW<br />
                     Canton, OH 44718<br />
                     <span className="text-sm">2,520 SF of Office Space Available</span>
